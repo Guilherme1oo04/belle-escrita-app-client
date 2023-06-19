@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor1: #41E0A5;
+    --cor2: #494C82;
+    --cor3: #CDC1D5;
+    --cor4: #AC49DA;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sua-turma{
+    font-size: 30px;
+}
+
+.pessoas-turma{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 15px auto;
+    background-color: #fff;
+    padding: 15px;
+    border: 2px solid var(--cor2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.pessoas-turma img{
+    width: 100%;
+    max-width: 160px;
+    border: 2px solid var(--cor2);
+    border-radius: 50%;
+}
+
+.pessoas-turma .info{
+    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+}

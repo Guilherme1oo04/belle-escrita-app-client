@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor1: #41E0A5;
+    --cor2: #494C82;
+    --cor3: #CDC1D5;
+    --cor4: #AC49DA;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.perfil-aluno .foto{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--cor2);
+    box-shadow: 0px 0px 2px black;
+}
+
+.campos {
+    font-size: 24px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.valores-login{
+    font-size: 20px;
+    color: var(--cor2);
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    border: 2px solid var(--cor2);
+    word-wrap: break-word;
+}
+
+.botao-sair{
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    font-weight: bold;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

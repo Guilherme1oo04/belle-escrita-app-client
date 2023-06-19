@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor1: #41E0A5;
+    --cor2: #494C82;
+    --cor3: #CDC1D5;
+    --cor4: #AC49DA;
+}
+
+body{
+    background-color: var(--cor3);
+}
+
+.titulo-belle-escrita{
+    font-size: 60px;
+    font-family: 'Arizonia', cursive;
+    color: var(--cor2);
+    margin-top: 50px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.login-form-group{
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-form-group .form-field{
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--cor2);
+    padding: 5px;
+    font-size: 18px;
+    color: var(--cor2);
+}
+
+.login-form-group .form-field::-webkit-input-placeholder{
+    color: var(--cor2);  
+}
+.login-form-group .form-field::-moz-placeholder{
+    color: var(--cor2);  
+}
+
+.login-form-group .form-error{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    margin-top: 10px;
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.button-submit{
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    font-weight: bold;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.cadastro{
+    color: var(--cor2);
+    margin-top: 15px;
+}
