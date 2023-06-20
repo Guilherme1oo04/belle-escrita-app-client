@@ -68,7 +68,7 @@ app.post("/enviarredacao", (req, res) => {
   const desenv2 = req.body.desenvolvimento2
   const conclusao = req.body.conclusao
 
-  db.query("INSERT INTO redacoes (tema, introducao, desenvolvimento1, desenvolvimento2, conclusao, idAutorRedacao, statusRed, emailAutor) VALUES (?, ?, ?, ?, ?, ?, ?)", [tema, introducao, desenv1, desenv2, conclusao, idUser, 'Não corrigida', emailUser], (err, response) => {
+  db.query("INSERT INTO redacoes (tema, introducao, desenvolvimento1, desenvolvimento2, conclusao, idAutorRedacao, statusRed, emailAutor) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", [tema, introducao, desenv1, desenv2, conclusao, idUser, 'Não corrigida', emailUser], (err, response) => {
     if (err){
       res.send({statusEnvio: 'Erro'})
     }
