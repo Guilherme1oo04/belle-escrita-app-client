@@ -3,7 +3,6 @@ import './modalDeveloper.css';
 import QrCodeLinkedin from '../../assets/linkedin-guilherme.png';
 import GithubIcon from '../../assets/github-icon.png';
 import InstagramIcon from '../../assets/instagram-icon.png';
-import LinkedinIcon from '../../assets/linkedin-icon.png';
 
 const Modal = ({open, setModalOpen}) => {
 
