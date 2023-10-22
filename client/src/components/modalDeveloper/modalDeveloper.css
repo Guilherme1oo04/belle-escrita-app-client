@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor1: #41E0A5;
+    --cor2: #494C82;
+    --cor3: #CDC1D5;
+    --cor4: #AC49DA;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.modal-body {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.menu-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-modal .links-dev {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-modal .links-dev img {
+    max-width: 2vw;
+    margin-right: 4px;
+    cursor: pointer;
+
+}
+.menu-modal .links-dev a{
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.menu-modal .links-dev .link-dev {
+    background-color: transparent;
+    color: black;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.link-qrCode-linkedin {
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+}
+.qrCode-linkedin {
+    width: 100%;
+    max-width: 300px;
+}
+
+.info-dev {
+    color: black;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.bt-close-modal {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 30px;
+    width: 40px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.bt-close-modal:hover{
+    background-color: rgb(209, 31, 31);
+}

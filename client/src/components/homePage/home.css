@@ -47,3 +47,42 @@ main a{
     word-wrap: break-word;
     box-shadow: 1.5px 1.5px 2px black;
 }
+
+main .bt-active-modal {
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--cor2);
+    background-color: #fff;
+    width: 90%;
+    max-width: 200px;
+    margin: auto;
+    border: 2px solid var(--cor2);
+    word-wrap: break-word;
+    box-shadow: 1.5px 1.5px 2px black;
+    display: block;
+    margin-top: 60px;
+    animation: bt-dev infinite 2s;
+    transition: 0.2s;
+}
+
+main .bt-active-modal:hover {
+    border: 2px solid var(--cor3);
+    box-shadow: 0px 0px 10px var(--cor2);
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+@keyframes bt-dev {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}

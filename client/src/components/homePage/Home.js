@@ -1,12 +1,16 @@
-import {React} from 'react';
-import Menu from '../menu/Menu'
-import './home.css'
-import Cronograma from '../../assets/cronograma-belle-escrita.pdf'
+import {React, useState} from 'react';
+import Menu from '../menu/Menu';
+import './home.css';
+import Cronograma from '../../assets/cronograma-belle-escrita.pdf';
+import Modal from '../modalDeveloper/modalDeveloper';
 
 const Home = () => {
     const user = localStorage.getItem("usuariologado")
 
+    const [openModal, setOpenModal] = useState(false);
+
     if (user){
+
         return(
             <div>
                 <Menu/>
@@ -19,6 +23,10 @@ const Home = () => {
                     <p>Clique no botão abaixo para baixar o cronograma do Belle Escrita.</p>
 
                     <a href={Cronograma} download="Cronograma do Belle Escrita">Cronograma</a>
+
+                    <button className='bt-active-modal' onClick={() => setOpenModal(!openModal)}>Desenvolvedor</button>
+
+                    <Modal open={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
                 </main>
     
             </div>
